@@ -16,20 +16,23 @@ The project focuses on the ATM controller logic. External banking systems, user 
 ## Installation 
 Clone the repository:
 
-'''
+```
 git clone https://github.com/hanna-bae/ATM_controller.git 
 cd ATM_controller 
-'''
+```
+
 Configure and build the project:
 
+```
 cmake -S . -B build 
 cmake --build build 
+```
 
 ## Run 
 Run the example ATM flow:
-
+```
 ./build/atm 
-
+```
 Example output:
 
 Initial balance: 1000
@@ -40,9 +43,10 @@ After withdrawal: 1200
 Tests are implemented using GoogleTest and are located in the tests/ directory. 
 
 Run all tests:
-
+```
 ctest --test-dir build --output-on-failure 
-
+```
 Or run the GoogleTest exetuable direclty:
+```
 ./build/tests/atm_tests
-
+```
